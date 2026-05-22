@@ -300,7 +300,9 @@ nav #link{
 .project{
     width: 100%;
     background-color: var(--cla);
-    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 .project .project-t{
     width: 100%;
@@ -315,10 +317,9 @@ nav #link{
     color: var(--a);
 }
 .project .parent-pro{
-    display: inline-block;
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    /* margin-left: 10px; */
 }
 .project .parent-pro .card{
     width: 400px;
