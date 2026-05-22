@@ -1,0 +1,513 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --par:rgb(255, 255, 255);
+    --cla:rgb(255, 255, 255);
+    --doo:rgb(255, 239, 159);
+    --vbb:rgb(239, 227, 202);
+    --text:rgb(12, 12, 12);
+    --a:rgb(7, 252, 252);
+    --coffe:rgb(228, 214, 169);
+    --inform:rgb(5, 17, 28);
+    --tt:rgb(238, 238, 238);
+}
+nav{
+    height: 70px;
+    padding: 0 5% !important;
+    background-color: var(--inform);
+}
+nav #link{
+    color: var(--par);
+    font-size: 25px;
+    transition: all 2s;
+}
+nav #link:hover{
+    color: var(--a);
+    scale: 1.1;
+}
+nav #logo{
+    font-size: 40px;
+    font-weight: bold;
+    font-family: cursive;
+    transition: all 2s;
+
+}
+nav #logo:hover{
+    color: var(--a);
+    scale: 1.1;
+    cursor: pointer;
+}
+@media screen and (max-width:450px){
+    nav{
+    height: 65px;
+}
+nav #link{
+    width: 150px;
+    background-color: var(--par);
+    color: var(--inform);
+    font-size: 25px;
+    transition: all 2s;
+}
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--par);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.header .text{
+    width: 400px;
+    color:var(--text);
+}
+.header .text h5{
+    margin-top:10px ;
+    margin: 10px;
+}
+.header .text p{
+    margin: 10px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.header .text #cv{
+    display: inline-block;
+    margin: 10px;
+    text-decoration: none;
+    background-color:var(--a) ;
+    color: var(--text);
+    width: 40%;
+    padding: 15px 25px;
+    border-radius: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    transition: all 2s ;
+}
+.header .text #cv:hover{
+    scale: 1.1;
+    background-color: var(--vbb);
+}
+.header .text .icons #icon{
+    color: var(--text);
+    margin: 10px;
+    font-size: 30px;
+    transition: all 1.3s;
+}
+.header .text .icons #icon:hover{
+    scale: 1.1;
+    background-color: var(--a);
+}
+.header .imgg{
+    width: 300px;
+    height: 400px;
+    background-image:url(./img/IMG_7986.JPG);
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-position:center;
+    background-size: cover;
+    box-shadow: var(--text) 0px 5px 10px 5px; 
+    transition: all 2s;
+    margin-top: 20px;
+}
+.header .imgg:hover{
+    scale: 1.1;
+}
+@media screen and (max-width:715px) {
+.header{
+
+    height: 120vh;
+}    
+.header .text{
+    text-align: center;
+}
+.header .text h5{
+    margin: 6px;
+}
+.header .text p{
+    margin: 6px;
+    font-size: 25px;
+}
+.header .text .icons #icon{
+    color: var(--text);
+    margin: 5px;
+    font-size: 25px;
+}
+.header .imgg{
+    width: 250px;
+    height: 350px;
+}
+/* .header .imgg img{
+    height: 350px;
+} */
+.header .imgg img:hover{
+    scale: 1.1;
+}
+}
+@media screen and (max-width:400px){
+
+.header .imgg{
+    width: 250px;
+    height: 300px;
+    background-position: center;
+}
+}
+/* section 2 */
+.parent{
+    width: 100%;
+    height: 95vh;
+    background-color: var(--text);
+}
+.parent .text{
+    width:100%;
+    height: 250px;
+    color: var(--par);
+    font-size: 50px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 2s;
+}
+.parent .text:hover{
+    scale: 1.1;
+    color: var(--a);
+}
+.parent .skill{
+    width: 50%;
+    height: 200px;
+    background-color: var(--par);
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-shadow: 3px 3px 10px var(--par);
+    margin: auto;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.parent .skill pre{
+    color: var(--text);
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* margin: 10px; */
+    padding: 10px 15px;
+}
+.parent .skill p{
+    color: var(--text);
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0 10px;
+    margin-bottom: 10px;
+} 
+
+@media screen and (max-width:1000px){
+.parent .text{
+    font-size: 40px;
+}
+.parent .skill{
+    width: 90%;
+    height: 150px;
+}
+.parent .skill pre{
+    font-size: 13px;
+    margin: 10px; 
+
+}
+.parent .skill p{
+    font-size: 12px;
+} 
+}
+@media screen and (min-width:200px) and (max-width:600px){
+.parent .text{
+    font-size: 40px;
+}
+.parent .skill{
+    width: 99%;
+    height: 130px;
+}    
+.parent .skill pre{
+    font-size: 10.5px;
+    margin: 10px; 
+
+}
+.parent .skill p{
+    font-size: 10px;
+} 
+}  
+
+/* section 3*/
+.exp{
+    width: 100%;
+    height: 90vh;
+    background-color: var(--tt);
+} 
+.exp h2{
+    text-align: center;
+    padding: 40px;
+    font-size: 40px;
+    transition: all 2s;
+}
+.exp h2:hover{
+    scale: 1.1;
+    color: var(--a);
+}
+.exp .bar p{
+    font-size: 25px;
+    margin: 20px 0 0 20px;
+    font-family:inherit;
+    
+}
+.exp .bar .skill{
+    width: 80%;
+    border-radius: 20px;
+    background-color: var(--text);
+    font-size: 25px;
+    margin: 0 0 20px 20px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+.exp .bar .skill .fg{
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    text-align: center;
+    font-family:inherit ;
+    font-size: 20px;
+    
+}
+.exp .bar .skill .fg1{
+    width: 95%;
+    background-color: rgb(218, 4, 4);
+}
+.exp .bar .skill .fg2{
+    width: 85%;
+    background-color: rgb(4, 218, 11);
+}
+.exp .bar .skill .fg3{
+    width: 75%;
+    background-color: rgb(4, 207, 218);
+} 
+.exp .bar .skill .fg4{
+    width: 70%;
+    background-color: rgb(218, 4, 207);
+}
+/* section 4 */
+.project{
+    width: 100%;
+    background-color: var(--cla);
+    
+}
+.project .project-t{
+    width: 100%;
+    padding: 40px;
+    font-size: 45px;
+    transition: all 2s;
+    display: flex;
+    justify-content: center;
+}
+.project .project-t:hover{
+    scale: 1.1;
+    color: var(--a);
+}
+.project .parent-pro{
+    display: inline-block;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* margin-left: 10px; */
+}
+.project .parent-pro .card{
+    width: 400px;
+    background-color: var(--text);
+    border: 3px solid var(--vbb);
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.project .parent-pro .img{
+    width: 100%;
+    height: 370px;
+    border-radius: 20px 20px 0 0;
+    background-image: url(./img/488799334_122227181828194114_2908331851604400862_n.jpg); 
+    background-position: center;
+    background-size: cover;
+}
+.project .parent-pro .link{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(5, 17, 28);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:0 0 20px 20px ;
+}
+.project .parent-pro .link a{
+    padding: 20px 20px;
+    margin: 10px ;
+    background-color: var(--a);
+    display: inline-block;
+    border-radius:  20px;
+    text-decoration: none;
+    color: var(--text);
+    font-size: 20px;
+    font-weight: bold;
+    transition: all 2s;
+}
+.project .parent-pro .link a:hover{
+    scale: 1.1;
+    background: var(--par);
+}
+@media screen and (min-width:200px) and (max-width: 450px){
+    .project .parent-pro .card{
+      width: 350px;  
+    }
+    .project .parent-pro{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+} 
+}
+ @media screen and (min-width:650px) and (max-width:1000px){
+    .project .parent-pro .card{
+      width: 350px;
+    }
+    .project{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+nav #link{
+    width: 150px;
+    background-color: var(--par);
+    color: var(--inform);
+    font-size: 25px;
+    font-family: cursive;
+    transition: all 2s;
+}
+ }
+/*section 5*/
+.parent-contact{
+    width: 100%;
+    background-color: var(--par);
+}
+.parent-contact .title-cont{
+    width: 100%;
+    padding-top: 30px;
+    background-color: var(--par);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    transition: all  2s;
+}
+.parent-contact .title-cont:hover{
+    scale: 1.1;
+    color: var(--a);
+}
+.parent-contact .inform{
+    width: 100%;
+    background-color: var(--cla);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 45px;
+    margin-top:40px ;
+}
+.parent-contact .inform .input{
+    width: 40%;
+    background-color: var(--inform);
+    border-radius: 30px 0 30px 0;
+    box-shadow: var(--inform) 0px 5px 10px 5px; 
+    border: none; 
+    display: flex;
+    flex-direction: column; 
+    /* font-family: cursive; */
+}
+.parent-contact .inform .input .total-in{
+    color: var(--par);
+    padding-top: 40px;
+    text-align: center;
+    font-size: 20px;
+    
+}
+.parent-contact .inform .input .in1{
+    margin-bottom: 30px;
+    border-radius: 20px;
+}
+.parent-contact .inform .input .in2{
+    margin-bottom: 30px;
+}
+.parent-contact .inform .input .in3{
+    margin-bottom: 40px;
+}
+.parent-contact .inform .input .in{
+    border-radius: 40%;
+    margin-bottom: 50px;
+}
+textarea{
+    width: 65%;
+    height: 225px;
+}
+#send{
+    padding: 10px 30px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+@media screen and (min-width:200px) and (max-width:450px){
+    .parent-contact .inform .input{
+    width: 90%;
+    }
+    .parent-contact .inform .input .total-in{
+    font-size: 18px; 
+}
+textarea{
+    width: 80%;
+    height: 225px;
+}
+}
+ @media screen and (min-width:650px) and (max-width:1000px){
+    .parent-contact .inform .input{
+    width: 70%;
+    }
+    .parent-contact .inform .input .total-in{
+    font-size: 22px; 
+
+}
+   textarea{
+    width: 60%;
+    height: 225px;
+} 
+ }
+/* section 6 */
+.footer{
+    width: 100%;
+    height: 70px;
+    background-color: var(--inform);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+    color: var(--par);
+}
+.footer .text{
+    font-size: 20px;
+}
+.footer .email{
+    font-size: 20px;
+}
+@media screen and (min-width:200px) and (max-width:450px){
+ .footer{
+    font-size: 17px;
+}  
+.footer .text{
+    font-size: 15px;
+} 
+.footer .email{
+    font-size: 15px;
+}
+}
